@@ -1,0 +1,27 @@
+require_relative '../config/environment'
+
+
+kiki = Song.new("In My Feelings", "hip-hop")
+hotline = Song.new("Hotline Bling", "pop")
+drake = Artist.new("Drake")
+ 
+kiki.artist = drake
+ 
+kiki.artist.name
+
+
+
+drake.add_song(kiki)
+drake.add_song(hotline)
+
+
+lil_nas_x = Artist.new("Lil Nas X")
+rick = Artist.new("Rick Astley")
+
+old_town_road = Song.new("Old Town Road", "hip-hop")
+never_gonna_give_you_up = Song.new("Never Gonna Give You Up", "pop")
+
+old_town_road.artist = lil_nas_x
+never_gonna_give_you_up.artist = rick
+
+binding.pry
